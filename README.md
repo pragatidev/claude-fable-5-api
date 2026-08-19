@@ -55,7 +55,7 @@ docs/CURRENCY.md  re-read before any record session
 
 | Section | What you do here |
 |---|---|
-| S1 | Clone, `pytest`, read this file |
+| S1 | What you need, clone, `pytest` |
 | S2 | What Fable 5 is, why it exists, Mythos vs Opus, then first call + parse + exercise 2A |
 | S3 | Refusals, fallbacks, effort |
 | S4 | Feature plan, model choice, capstone starter |
