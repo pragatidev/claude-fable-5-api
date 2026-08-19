@@ -21,12 +21,13 @@ from fable_client.parse import first_text, stop_reason
 
 PROMPT = (
     "In four short bullets, list what a software engineer must check "
-    "on a Claude Fable 5 Messages response before reading content."
+    "on a Claude Messages API response before reading content. "
+    "Do not name model SKUs."
 )
 
 
 def run_one(client, effort: str) -> None:
-    kwargs = build_create_kwargs(prompt=PROMPT, max_tokens=400, effort=effort)
+    kwargs = build_create_kwargs(prompt=PROMPT, max_tokens=1024, effort=effort)
     response = client.messages.create(**kwargs)
     receipt = estimate_cost_usd(
         response.usage.input_tokens,

@@ -21,11 +21,11 @@ from fable_client.cost import estimate_cost_usd
 from fable_client.models import FABLE_5, OPUS_FALLBACK, fable_or_opus_rule
 from fable_client.parse import first_text, stop_reason
 
-PROMPT = "In one sentence, what is stop_reason refusal on Claude Fable 5?"
+PROMPT = "In one sentence, what does stop_reason refusal mean on the Claude Messages API?"
 
 
 def run(client, model: str) -> None:
-    kwargs = build_create_kwargs(prompt=PROMPT, model=model, max_tokens=128, effort="low")
+    kwargs = build_create_kwargs(prompt=PROMPT, model=model, max_tokens=256, effort="low")
     started = time.perf_counter()
     response = client.messages.create(**kwargs)
     elapsed = time.perf_counter() - started
