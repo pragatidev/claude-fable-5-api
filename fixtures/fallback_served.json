@@ -1,0 +1,27 @@
+{
+  "id": "msg_fixture_fallback_001",
+  "type": "message",
+  "role": "assistant",
+  "model": "claude-opus-4-8",
+  "content": [
+    {
+      "type": "fallback",
+      "from": {"model": "claude-fable-5"},
+      "to": {"model": "claude-opus-4-8"}
+    },
+    {
+      "type": "text",
+      "text": "Fallback model answered after a classifier decline."
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 40,
+    "output_tokens": 22,
+    "iterations": [
+      {"type": "message"},
+      {"type": "fallback_message"}
+    ]
+  }
+}

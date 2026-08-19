@@ -1,0 +1,22 @@
+{
+  "id": "msg_fixture_success_001",
+  "type": "message",
+  "role": "assistant",
+  "model": "claude-fable-5",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": ""
+    },
+    {
+      "type": "text",
+      "text": "API connection confirmed. Model id is claude-fable-5."
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 24,
+    "output_tokens": 18
+  }
+}
