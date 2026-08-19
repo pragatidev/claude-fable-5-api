@@ -1,6 +1,7 @@
 """Lab 01: first Messages call to claude-fable-5.
 
-Needs ANTHROPIC_API_KEY. Fixture labs (02, 03, 04) do not.
+Needs ANTHROPIC_API_KEY in repo-root .env (copy .env.sample).
+Fixture labs (02, 03, 04) do not.
 """
 
 from __future__ import annotations

@@ -12,8 +12,8 @@ def load_api_key() -> str:
     key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
     if not key:
         raise SystemExit(
-            "ANTHROPIC_API_KEY is missing. Copy .env.example to .env and add a key "
-            "from console.anthropic.com. Fixture labs do not need a key."
+            "ANTHROPIC_API_KEY is missing. Copy .env.sample to .env and paste a key "
+            "from https://platform.claude.com/settings/keys. Fixture labs do not need a key."
         )
     return key
 

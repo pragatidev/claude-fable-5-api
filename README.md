@@ -29,9 +29,14 @@ You should see a green pytest run. Offline labs use `fixtures/`.
 
 ## Live labs (needs a key)
 
-1. Copy `.env.example` to `.env`
-2. Paste an Anthropic API key from https://console.anthropic.com
-3. Your workspace must allow 30-day retention. Fable 5 is not available under zero data retention.
+The key lives in **`.env` in this repo root**. That file is gitignored. Do not push it.
+
+1. Copy the sample: `copy .env.sample .env` (Windows) or `cp .env.sample .env` (macOS / Linux)
+2. Create a key at https://platform.claude.com/settings/keys
+3. Paste it as `ANTHROPIC_API_KEY=sk-ant-...` in `.env`
+4. Your workspace must allow 30-day retention. Fable 5 is not available under zero data retention.
+
+Full steps: `docs/ACCESS.md`.
 
 ```bash
 python labs/01_first_call.py

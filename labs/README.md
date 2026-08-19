@@ -2,8 +2,8 @@
 
 | File | Key? | Lecture |
 |---|---|---|
-| `01_first_call.py` | yes | 2.2 |
-| `02_parse_response.py` | no | 2.3 |
+| `01_first_call.py` | yes (`.env` from `.env.sample`) | 2.4 |
+| `02_parse_response.py` | no | 2.5 |
 | `03_refusals.py` | no | 3.2 |
 | `04_fallbacks.py` | no | 3.2 |
 | `05_effort.py` | yes | 3.3 |

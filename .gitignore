@@ -1,4 +1,6 @@
 .env
+.env.local
+!.env.sample
 .venv/
 venv/
 __pycache__/

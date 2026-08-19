@@ -30,5 +30,6 @@ If `pytest` is not on PATH after install:
 python -m pytest
 ```
 
-Live labs: copy `.env.example` to `.env` and add `ANTHROPIC_API_KEY`.
-See `docs/ACCESS.md`.
+Live labs: copy `.env.sample` to `.env`, then paste a key from
+https://platform.claude.com/settings/keys
+See `docs/ACCESS.md`. Never commit `.env`.
